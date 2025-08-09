@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Spline from "@splinetool/react-spline";
 
+// ⬇️ add this
+import asset from "../asset";
+
 export default function Slide01_Title() {
   const [isSplineLoaded, setIsSplineLoaded] = useState(false);
 
@@ -71,7 +74,7 @@ export default function Slide01_Title() {
 
           <div className="w-full h-[500px] overflow-hidden rounded-xl shadow-md">
             <Spline
-              scene="/models/soul_neuron.splinecode"
+              scene={asset("models/soul_neuron.splinecode")} // ⬅️ use asset()
               onLoad={() => setIsSplineLoaded(true)}
             />
           </div>

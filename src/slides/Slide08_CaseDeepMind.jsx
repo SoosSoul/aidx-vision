@@ -8,6 +8,9 @@ import {
   Play,
 } from "lucide-react";
 
+// ⬇️ Add this
+import asset from "../asset";
+
 const fadeCard = (delay = 0) => ({
   initial: { opacity: 0, y: 30 },
   whileInView: { opacity: 1, y: 0 },
@@ -36,7 +39,7 @@ export default function Slide08_CaseDeepMind() {
           Case study
         </span>
         <p className="text-gray-700 text-base sm:text-lg md:ml-4 max-w-full md:max-w-2xl">
-          Google DeepMind eye disease detection. Triaging sight‑threatening
+          Google DeepMind eye disease detection. Triaging sight-threatening
           cases.
         </p>
       </motion.div>
@@ -80,10 +83,10 @@ export default function Slide08_CaseDeepMind() {
             </ul>
 
             <p className="mt-4 text-sm sm:text-base text-gray-700 leading-relaxed">
-              This AI system analyzes high‑resolution retinal images to identify
+              This AI system analyzes high-resolution retinal images to identify
               patterns linked to conditions like diabetic retinopathy, macular
               degeneration, and glaucoma. By combining deep learning with
-              large‑scale medical datasets, it flags risk, ranks likely
+              large-scale medical datasets, it flags risk, ranks likely
               diagnoses, and routes urgent cases for rapid review helping
               clinicians intervene earlier and prevent irreversible vision loss.
             </p>
@@ -97,7 +100,7 @@ export default function Slide08_CaseDeepMind() {
                 className="w-full h-full object-cover"
                 controls
                 preload="metadata"
-                src="/videos/deepmind-retina.mp4"
+                src={asset("videos/deepmind-retina.mp4")}
               />
             </div>
           </div>

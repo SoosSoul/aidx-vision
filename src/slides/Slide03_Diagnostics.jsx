@@ -11,6 +11,9 @@ import {
   FileSearch,
 } from "lucide-react";
 
+// ⬇️ add this
+import asset from "../asset";
+
 export default function Slide03_Diagnostics() {
   const cards = [
     {
@@ -99,7 +102,7 @@ export default function Slide03_Diagnostics() {
                 {card.image && (
                   <div className="w-full h-28 sm:h-32 md:h-36 overflow-hidden">
                     <img
-                      src={card.image}
+                      src={asset(card.image)}
                       alt={card.title}
                       className="w-full h-full object-cover"
                       loading="lazy"
@@ -155,7 +158,7 @@ export default function Slide03_Diagnostics() {
                 {card.image && (
                   <div className="w-full h-32 sm:h-36 md:h-40 overflow-hidden">
                     <img
-                      src={card.image}
+                      src={asset(card.image)}
                       alt={card.title}
                       className="w-full h-full object-cover"
                       loading="lazy"

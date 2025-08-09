@@ -10,6 +10,9 @@ import {
   ShieldCheck,
 } from "lucide-react";
 
+// ⬇️ add this
+import asset from "../asset";
+
 const fadeCard = (delay = 0) => ({
   initial: { opacity: 0, y: 30 },
   whileInView: { opacity: 1, y: 0 },
@@ -126,7 +129,7 @@ export default function Slide07_Applications() {
               {card.image && (
                 <div className={`w-full ${imgHeight} overflow-hidden`}>
                   <img
-                    src={card.image}
+                    src={asset(card.image)}
                     alt={card.title}
                     className="w-full h-full object-cover"
                     loading="lazy"

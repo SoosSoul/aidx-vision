@@ -9,6 +9,9 @@ import {
   Play,
 } from "lucide-react";
 
+// ⬇️ add this
+import asset from "../asset";
+
 const fadeCard = (delay = 0) => ({
   initial: { opacity: 0, y: 30 },
   whileInView: { opacity: 1, y: 0 },
@@ -99,7 +102,7 @@ export default function Slide09_CaseWatson() {
                 className="w-full h-full object-cover"
                 controls
                 preload="metadata"
-                src="/videos/watson-oncology.mp4"
+                src={asset("videos/watson-oncology.mp4")}
               />
             </div>
           </div>
