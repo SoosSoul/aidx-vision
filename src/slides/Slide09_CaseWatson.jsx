@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 
 // ⬇️ add this
-import asset from "../asset";
+import asset from "@/asset";
 
 const fadeCard = (delay = 0) => ({
   initial: { opacity: 0, y: 30 },

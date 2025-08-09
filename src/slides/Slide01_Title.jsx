@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Spline from "@splinetool/react-spline";
 
 // ⬇️ add this
-import asset from "../asset";
+import asset from "@/asset";
 
 export default function Slide01_Title() {
   const [isSplineLoaded, setIsSplineLoaded] = useState(false);

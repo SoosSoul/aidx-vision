@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 
 // ⬇️ add this
-import asset from "../asset";
+import asset from "@/asset";
 
 export default function Slide03_Diagnostics() {
   const cards = [
